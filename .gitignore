@@ -1,0 +1,7 @@
+vault.key
+.secret
+data/vault.json
+access.log
+venv/
+__pycache__/
+.vscode/
