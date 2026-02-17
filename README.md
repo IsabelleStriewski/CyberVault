@@ -37,6 +37,23 @@ Ein zentrales Feature dieses Projekts ist die logische Trennung von Quellcode un
 
 > **Wichtiger Hinweis:** Nach der Generierung des Schlüssels sollte dieser als Umgebungsvariable `CYBERVAULT_KEY` im System hinterlegt werden, um die Sicherheitsfeatures voll zu nutzen.
 
+### Konfiguration der Umgebungsvariablen
+
+Damit CyberVault den Schlüssel erkennt, muss dieser im System hinterlegt werden:
+
+#### Windows (PowerShell)
+
+powershell
+setx CYBERVAULT_KEY "DEIN_GENERIERTER_SCHLÜSSEL"```
+
+# Wichtig: Starten Sie VS Code oder Ihr Terminal danach neu, damit die Änderungen wirksam werden.
+
+#### Linux (Bash)
+Da das Projekt Linux-optimiert ist (LPI Linux Essentials Standard), nutzen Sie:
+
+echo 'export CYBERVAULT_KEY="DEIN_GENERIERTER_SCHLÜSSEL"' >> ~/.bashrc
+source ~/.bashrc
+
 ---
 
 ## Roadmap (Nächste Schritte)
@@ -65,4 +82,5 @@ CyberVault dient als Demonstration für den sicheren Umgang mit sensiblen Daten.
 * **Kryptografische Konzepte** (Symmetrische Verschlüsselung & Hashing)
 * **Dateisystem-Interaktion** (JSON & Binärdaten)
 * **Umgebungskonfiguration** (Environment Variables)
+
 * **Logging** (Audit-Trail in `access.log`)
