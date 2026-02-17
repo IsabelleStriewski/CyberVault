@@ -46,7 +46,7 @@ Damit CyberVault den Schlüssel erkennt, muss dieser im System hinterlegt werden
 powershell
 setx CYBERVAULT_KEY "DEIN_GENERIERTER_SCHLÜSSEL"```
 
-# Wichtig: Starten Sie VS Code oder Ihr Terminal danach neu, damit die Änderungen wirksam werden.
+#### Wichtig: Starten Sie VS Code oder Ihr Terminal danach neu, damit die Änderungen wirksam werden.
 
 #### Linux (Bash)
 Da das Projekt Linux-optimiert ist (LPI Linux Essentials Standard), nutzen Sie:
@@ -84,3 +84,4 @@ CyberVault dient als Demonstration für den sicheren Umgang mit sensiblen Daten.
 * **Umgebungskonfiguration** (Environment Variables)
 
 * **Logging** (Audit-Trail in `access.log`)
+
